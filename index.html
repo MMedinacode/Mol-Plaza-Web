@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- DEMO de venta, no el sitio oficial del local. Lleva nombre, reseñas y
+     horario reales, por eso va con noindex. Se quita si el local contrata. -->
+<meta name="robots" content="noindex, nofollow">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafetería y Pastelería Mol Plaza · San Bernardo</title>
+<meta name="description" content="Cafetería y pastelería Mol Plaza — almuerzos, sándwiches y repostería en Arturo Prat 648, San Bernardo. 4.4★ con 303 opiniones en Google.">
+
+<!--
+  ============================================================
+  DEMO — CAFETERÍA MOL PLAZA (Arturo Prat 648, San Bernardo)
+
+  ✅ DATOS REALES VERIFICADOS (10-09-2026)
+  - Google Maps: 4.4★, 303 opiniones, Cafetería.
+  - Dirección: Arturo Prat 648, 8071031 San Bernardo.
+  - Teléfono publicado en Google: 9 8184 8351.
+  - Place ID real: 0x9662d9507bbdb2b9:0xde5ec4cdf1e0ab0a
+  - Coordenadas: -33.5924455, -70.7059188
+  - Rango informado en Google por 19 personas: $5.000–10.000 por persona.
+  - Servicios: consumo en el lugar, para llevar y pedidos en línea.
+  - Nombre completo del letrero de su fachada: "Cafetería y Pastelería Mol Plaza".
+  - Instagram real: @cafeteriamolplaza
+  - Platos destacados por su propia ficha: lomo a lo pobre, churrasco italiano, salmón a lo pobre.
+  - 2 reseñas reales con nombre.
+  - Fotos: fotos propias del local publicadas en su ficha de Google.
+
+  ⚠️ PENDIENTE / NUNCA INVENTADO:
+  - CARTA Y PRECIOS: su menú es un PDF (32co.short.gy/Menu-mol-plaza) que el navegador
+  -   descarga en vez de abrir. Pedirle el archivo al local para cargar la carta completa.
+  - HORARIO por día: Google solo confirma el cierre a las 20:00.
+  - WHATSAPP: una búsqueda externa mencionaba +56 9 4732 2499, pero NO se pudo verificar
+  -   directamente. Por eso la página usa tel: con el número que sí publica Google.
+  - Solo 2 reseñas utilizables: la tercera visible era negativa y no se usa en una demo
+  -   de venta, pero conviene que el dueño la conozca (habla del café).
+  - Falta el logo real en buena resolución.
+  ============================================================
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="loader">
+  <div class="loader-marca" aria-hidden="true">
+    <svg viewBox="0 0 64 64" width="48" height="48"><path d="M10 22h34v18a14 14 0 0 1-14 14h-6a14 14 0 0 1-14-14z" fill="currentColor"/></svg>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <button class="brand" data-tab="inicio">
+      <span class="brand-ico" aria-hidden="true">
+        <svg viewBox="0 0 64 64" width="22" height="22"><path d="M10 22h34v18a14 14 0 0 1-14 14h-6a14 14 0 0 1-14-14z" fill="currentColor"/></svg>
+      </span>
+      <span class="brand-name">Mol Plaza</span>
+    </button>
+
+    <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+      <button class="nav-link active" data-tab="inicio">Inicio</button>
+      <button class="nav-link" data-tab="nosotros">Nosotros</button>
+      <button class="nav-link" data-tab="carta">Carta</button>
+      <button class="nav-link" data-tab="resenas">Reseñas</button>
+      <button class="nav-link" data-tab="visitanos">Visítanos</button>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-solid btn-sm" href="tel:+56981848351">Llamar</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= INICIO ================= -->
+<section class="tab-panel active" data-tab-panel="inicio">
+  <div class="hero">
+    <div class="hero-photo">
+      <img src="fotos/fachada.jpg" alt="Fachada de Cafetería y Pastelería Mol Plaza en Arturo Prat 648, San Bernardo">
+    </div>
+    <div class="hero-scrim"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Cafetería y pastelería · San Bernardo</p>
+      <h1 class="reveal">De las que ya quedan pocas</h1>
+      <p class="hero-lead reveal">Almuerzos caseros, sándwiches y repostería propia en Arturo Prat 648, con patio interior al fondo. Abierta desde hace años en pleno San Bernardo.</p>
+
+      <div class="hero-pills reveal">
+        <span class="pill"><span class="status-dot" id="statusDot"></span><span id="statusText">Consultando horario…</span></span>
+        <span class="pill">★ <strong>4.4</strong> · 303 opiniones en Google</span>
+        <span class="pill">🍽️ Almuerzos y once</span>
+      </div>
+
+      <div class="hero-ctas reveal">
+        <button class="btn btn-solid" data-tab="carta">Ver la carta</button>
+        <button class="btn btn-ghost" data-tab="visitanos">Cómo llegar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">Lo que hacemos</span>
+        <h2 class="section-title">Cocina de todos los días</h2>
+        
+      </div>
+      <div class="pilares">
+        <article class="info-card reveal">
+          <div class="pilar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/></svg></div>
+          <h3>Platos de fondo</h3>
+          <p>Lomo a lo pobre, churrasco italiano y salmón a lo pobre son los tres platos que su propio menú de Google destaca.</p>
+        </article>
+        <article class="info-card reveal">
+          <div class="pilar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M4 12c0-3 4-5 8-5s8 2 8 5"/><path d="M12 7V4"/></svg></div>
+          <h3>Pastelería propia</h3>
+          <p>La torta de tres leches es de lo más nombrado en sus 303 opiniones, junto con los sándwiches.</p>
+        </article>
+        <article class="info-card reveal">
+          <div class="pilar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M12 8c0-3 3-5 6-4-1 3-3 5-6 4z"/><path d="M12 13c0-3-3-5-6-4 1 3 3 5 6 4z"/></svg></div>
+          <h3>Patio interior</h3>
+          <p>Al fondo hay un patio con fuentes de agua donde a veces se hacen eventos — lo cuenta una reseña real del local.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NOSOTROS ================= -->
+<section class="tab-panel" data-tab-panel="nosotros">
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">Quiénes somos</span>
+        <h2 class="section-title">Un rincón con historia en San Bernardo</h2>
+      </div>
+      <div class="nosotros-grid">
+        <div class="nosotros-text reveal">
+          <p class="lead">
+            Mol Plaza es <strong>cafetería y pastelería</strong> a la vez, de esas de barrio
+            que abren temprano y sirven de todo: desayuno, almuerzo y once.
+          </p>
+          <p>
+            Una de sus reseñas lo resume mejor que cualquier eslogan: <em>"uno de esos negocios
+            típicos chilenos que cada vez quedan menos, un rincón que recuerda que San Bernardo
+            alguna vez fue la primera ciudad saliendo de Santiago al sur"</em>. Con
+            <strong>303 opiniones</strong> es de las cafeterías más conocidas de la comuna.
+          </p>
+          <div class="badges reveal">
+            <span class="badge">4.4★ · 303 opiniones</span>
+            <span class="badge">Consumo en el lugar</span>
+            <span class="badge">Para llevar</span>
+            <span class="badge">Pedidos en línea</span>
+            <span class="badge">Patio interior</span>
+          </div>
+          
+        </div>
+        <div class="nosotros-fotos reveal">
+          <figure class="foto-grande">
+            <img src="fotos/local1.jpg" alt="Interior de Cafetería Mol Plaza" loading="lazy">
+            <figcaption>El salón</figcaption>
+          </figure>
+          <figure>
+            <img src="fotos/local2.jpg" alt="Rincón de Cafetería Mol Plaza" loading="lazy">
+          </figure>
+          <figure>
+            <img src="fotos/local3.jpg" alt="Detalle de Cafetería Mol Plaza" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CARTA ================= -->
+<section class="tab-panel" data-tab-panel="carta">
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">La carta</span>
+        <h2 class="section-title">Nuestra carta</h2>
+        <p class="section-sub">Arma tu pedido y consúltanos. Según el dato que Google recoge de 19 clientes, el gasto promedio va entre $5.000 y $10.000 por persona.</p>
+      </div>
+      <div class="menu-tabs" id="menuTabs" role="tablist" aria-label="Categorías de la carta"></div>
+      <div id="menuPanels"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESEÑAS ================= -->
+<section class="tab-panel" data-tab-panel="resenas">
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">Lo que dicen</span>
+        <h2 class="section-title">4.4 / 5 · 303 opiniones en Google</h2>
+      </div>
+      <div class="resenas-grid">
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <p>"Cafetería Mol Plaza tiene un amplio espacio, bien ventilado, agradable. En el fondo hay una especie de patio interior donde eventualmente se realizan eventos, hay fuentes de agua, por tanto es constante el sonido."</p>
+          <footer><span class="avatar" aria-hidden="true">DG</span>
+            <span class="review-meta"><strong>David Garcia</strong>Local Guide · hace 7 meses</span></footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="4 de 5 estrellas">★★★★☆</div>
+          <p>"Uno de esos negocios típicos chilenos que cada vez quedan menos. Un rincón que recuerda que San Bernardo alguna vez fue la primera ciudad saliendo de Santiago al sur. La atención, muy cordial."</p>
+          <footer><span class="avatar" aria-hidden="true">GA</span>
+            <span class="review-meta"><strong>Gastón Arce P.</strong>hace un mes</span></footer>
+        </article>
+      </div>
+      <p class="review-cta-bajo reveal">
+        <a href="https://search.google.com/local/writereview?placeid=0x9662d9507bbdb2b9:0xde5ec4cdf1e0ab0a" target="_blank" rel="noopener">
+          ¿Nos visitaste? Déjanos tu reseña en Google
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VISÍTANOS ================= -->
+<section class="tab-panel" data-tab-panel="visitanos">
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">Visítanos</span>
+        <h2 class="section-title">Te esperamos en Arturo Prat</h2>
+      </div>
+      <div class="visitanos-grid">
+        <div class="visitanos-info reveal">
+          <div class="dato">
+            <span class="dato-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6-7-11a7 7 0 1 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <div><strong>Arturo Prat 648</strong><span>San Bernardo, Región Metropolitana</span></div>
+          </div>
+          <div class="dato">
+            <span class="dato-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div>
+              <strong>Horario</strong>
+              <span>Cierra a las 20:00</span>
+              <span class="nota-fuente">El horario completo por día está por confirmar con el local.</span>
+            </div>
+          </div>
+          <div class="dato">
+            <span class="dato-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1z"/></svg></span>
+            <div><strong>+56 9 8184 8351</strong><span>Teléfono publicado en su ficha de Google</span></div>
+          </div>
+          <div class="visitanos-ctas">
+            <a class="btn btn-solid" href="tel:+56981848351">Llamar al local</a>
+            <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=Cafeteria+Mol+Plaza+San+Bernardo&destination_place_id=0x9662d9507bbdb2b9:0xde5ec4cdf1e0ab0a" target="_blank" rel="noopener">Cómo llegar</a>
+            <a class="btn btn-ghost" href="https://waze.com/ul?ll=-33.5924455,-70.7059188&navigate=yes" target="_blank" rel="noopener">Abrir en Waze</a>
+          </div>
+        </div>
+        <div class="map-frame reveal">
+          <!-- Embed REAL: place id y coordenadas de su ficha de Google (10-09-2026) -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.0!2d-70.7059188!3d-33.5924455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d9507bbdb2b9%3A0xde5ec4cdf1e0ab0a!2sCafeteria%20Mol%20Plaza!5e0!3m2!1ses-419!2scl!4v1789005600000!5m2!1ses-419!2scl"
+            loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"
+            title="Mapa de Cafetería Mol Plaza en Arturo Prat 648"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <span class="brand-name footer-brand">Mol Plaza</span>
+      <p>Arturo Prat 648 · San Bernardo, Región Metropolitana</p>
+      <p class="status-line"><span class="status-dot" id="statusDot2"></span> <span id="statusText2">—</span></p>
+    </div>
+    <div class="footer-links">
+      <a href="https://instagram.com/cafeteriamolplaza" target="_blank" rel="noopener">Instagram</a>
+      <a href="tel:+56981848351">Teléfono</a>
+    </div>
+  </div>
+</footer>
+
+<div class="float-widget">
+  <a href="https://instagram.com/cafeteriamolplaza" target="_blank" rel="noopener" class="float-btn float-ig" aria-label="Instagram de Cafetería Mol Plaza">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+  </a>
+  <a href="tel:+56981848351" class="float-btn float-tel" aria-label="Llamar a Cafetería Mol Plaza">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1z"/></svg>
+  </a>
+</div>
+<script src="vida.js"></script>
+<script src="carta-fotos.js"></script>
+<script src="script.js"></script>
+<script src="carrito.js"></script>
+</body>
+</html>
