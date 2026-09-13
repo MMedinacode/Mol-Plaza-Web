@@ -1,53 +1,123 @@
 /* ============================================================
    CAFETERÍA MOL PLAZA — datos y lógica
    ============================================================
-   ⚠️ SIN PRECIOS. Su carta completa está en un PDF alojado en
-   32co.short.gy/Menu-mol-plaza, que el navegador descarga en vez de abrir,
-   así que no se pudo leer. Los productos listados son los que Google
-   publica como "Destacados del menú" del local, más los que aparecen
-   nombrados en sus reseñas reales. Ninguno inventado. Pedirle el PDF de la
-   carta al local para cargar los precios.
+   CARTA REAL, transcrita del PDF oficial del propio local
+   ("Menu_Mol_plaza_2022_.pdf", que Matías consiguió el 12-09-2026).
+   67 productos en 8 categorías, con los precios tal cual aparecen ahí.
+
+   ⚠️ OJO CON LA FECHA: ese PDF es de 2022. Los precios son REALES pero
+   pueden estar desactualizados, así que la sección Carta lo dice a la
+   vista del visitante, no solo acá. Apenas el local confirme la carta
+   nueva, se reemplazan los montos y se borra esa nota.
+   Nada inventado: lo que no estaba en el PDF no está en la página.
    ============================================================ */
 
 const MENU = {
-  "fondos": {
-    "label": "Platos de fondo",
-    "items": [
-      {
-        "n": "Lomo a lo pobre",
-        "d": "Destacado del menú en su propia ficha de Google"
-      },
-      {
-        "n": "Churrasco italiano",
-        "d": "Destacado del menú en su propia ficha de Google"
-      },
-      {
-        "n": "Salmón a lo pobre",
-        "d": "Destacado del menú en su propia ficha de Google"
-      }
+  "cafeteria": {
+    label: "Cafetería",
+    items: [
+      { n: "Capuccino", p: 2490 },
+      { n: "Mocaccino", p: 2490 },
+      { n: "Cortado", p: 2490 },
+      { n: "Late", p: 2490 },
+      { n: "Americano", p: 2200 },
+      { n: "Chocolate caliente", p: 2200 },
+      { n: "Té o café con leche", p: 2000 },
+      { n: "Leche caliente", p: 2000 },
+      { n: "Expreso simple", p: 1500 },
+      { n: "Expreso doble", p: 2000 },
+      { n: "Tazón de té", p: 2000 },
+      { n: "Té o café", p: 1500 },
     ]
   },
   "sandwiches": {
-    "label": "Sándwiches",
-    "items": [
-      {
-        "n": "Sándwiches",
-        "d": "\"Sándwich\" es de las palabras más repetidas en sus 303 opiniones"
-      }
+    label: "Sándwiches",
+    items: [
+      { n: "Ave palta", p: 4000 },
+      { n: "Ave mayo", p: 4000 },
+      { n: "Ave sola", p: 3890 },
+      { n: "Ave pimentón", p: 4000 },
+      { n: "Ave luco", p: 5500 },
+      { n: "Ave chacarera", p: 5500 },
+      { n: "Ave italiana", p: 5500 },
+      { n: "Quesillo vegetariano", p: 3800 },
+      { n: "Churrasco barros luco", p: 5500 },
+      { n: "Churrasco italiano", p: 5500, d: "Destacado del menú en su propia ficha de Google" },
+      { n: "Churrasco chacarero", p: 5500 },
+      { n: "Churrasco solo", p: 4500 },
+      { n: "Mechada sola", p: 5000 },
+      { n: "Mechada italiana", p: 5990 },
+      { n: "Mechada chacarera", p: 5990 },
+      { n: "Mechada luco", p: 5990 },
     ]
   },
-  "dulce": {
-    "label": "Pastelería",
-    "items": [
-      {
-        "n": "Torta tres leches",
-        "d": "Mencionada por nombre en varias de sus reseñas reales"
-      },
-      {
-        "n": "Pastelería del día",
-        "d": "Vitrina refrigerada a la entrada del local",
-        "img": "fachada.jpg"
-      }
+  "carta": {
+    label: "Carta Mol Plaza",
+    items: [
+      { n: "Lomo", p: 7990 },
+      { n: "Pechuga grillé", p: 6990 },
+      { n: "Plateada", p: 6990 },
+      { n: "Mechada", p: 6990 },
+      { n: "Par de chuletas", p: 6990 },
+      { n: "Reineta", p: 6990 },
+      { n: "Salmón", p: 7990 },
+      { n: "Extra agregado", p: 2000 },
+      { n: "Papa frita x1", p: 2000 },
+      { n: "Papa frita x2", p: 4000 },
+    ]
+  },
+  "pobre": {
+    label: "A lo pobre",
+    items: [
+      { n: "Lomo a lo pobre", p: 9900, d: "Destacado del menú en su propia ficha de Google" },
+      { n: "Pechuga grillé a lo pobre", p: 9900 },
+      { n: "Plateada a lo pobre", p: 9900 },
+      { n: "Mechada a lo pobre", p: 9900 },
+      { n: "Par de chuletas a lo pobre", p: 9900 },
+      { n: "Reineta a lo pobre", p: 9900 },
+      { n: "Salmón a lo pobre", p: 9900, d: "Destacado del menú en su propia ficha de Google" },
+    ]
+  },
+  "gelateria": {
+    label: "Gelatería",
+    items: [
+      { n: "Copa Urmeneta", p: 2990 },
+      { n: "Copa Max", p: 3990 },
+      { n: "Crepes con helado", p: 4990 },
+      { n: "Crepes con fruta", p: 4990 },
+      { n: "Crepes con salsa", p: 3990 },
+      { n: "Banana split", p: 3890 },
+      { n: "Brownie", p: 4990 },
+      { n: "Volcán de chocolate", p: 4990 },
+      { n: "Waffle con fruta", p: 4990 },
+      { n: "Café helado 500 cc", p: 4000 },
+    ]
+  },
+  "pasteleria": {
+    label: "Pastelería",
+    items: [
+      { n: "Porción de torta", p: 3000 },
+      { n: "Tartaletas", p: 1990 },
+      { n: "Cheesecake", p: 3000 },
+    ]
+  },
+  "ensaladas": {
+    label: "Ensaladas",
+    items: [
+      { n: "Palmito palta", p: 3000 },
+      { n: "Chilena x1", p: 2000 },
+      { n: "Chilena x2", p: 4000 },
+      { n: "Surtida x1", p: 2000 },
+      { n: "Surtida x2", p: 4000 },
+    ]
+  },
+  "bebidas": {
+    label: "Bebidas",
+    items: [
+      { n: "Jugo natural", p: 3500 },
+      { n: "Bebida 500 cc", p: 1500 },
+      { n: "Bebida en lata", p: 1000 },
+      { n: "Agua mineral", p: 1000 },
     ]
   }
 };

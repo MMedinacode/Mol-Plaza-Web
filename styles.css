@@ -4,8 +4,8 @@
    Tipografías: Spectral + Hanken Grotesk.
    ============================================================ */
 :root{
-  --acento:      #2E3647;
-  --acento-osc:  #1D2331;
+  --acento:      #7A1D22;
+  --acento-osc:  #521215;
   --segundo:     #B0763F;
   --apoyo:       #7A8B6F;
   --suave:       #EDEAE2;
@@ -55,6 +55,12 @@ h1,h2,h3{ font-family:var(--font-display); font-weight:600; line-height:1.14; }
 }
 .brand{ display:flex; align-items:center; gap:9px; background:none; border:none; cursor:pointer; padding:0; }
 .brand-ico{ color:var(--acento); display:flex; }
+/* Logo real del local (círculo sobre fondo blanco): se recorta redondo para
+   que no se vea el cuadrado del JPG contra la cabecera crema. */
+.brand-ico img{ width:38px; height:38px; border-radius:50%; display:block; }
+.loader-marca img{ width:74px; height:74px; border-radius:50%; display:block;
+  box-shadow:0 6px 20px rgba(0,0,0,.12); }
+
 .brand-name{ font-family:var(--font-display); font-size:1.5rem; color:var(--tinta); font-weight:600; }
 .nav-links{ display:flex; gap:4px; }
 .nav-link{
