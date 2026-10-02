@@ -61,6 +61,9 @@ const MENU = {
       { n: "Par de chuletas", p: 6990 },
       { n: "Reineta", p: 6990 },
       { n: "Salmón", p: 7990 },
+      // Pescado frito: de su historia de Instagram del 02-10-2026 («Ya tenemos, miércoles y viernes,
+      // nuestro tradicional pescado frito»). Sin precio publicado.
+      { n: "Pescado frito", d: "Nuestro tradicional pescado frito, los miércoles y viernes" },
       { n: "Extra agregado", p: 2000 },
       { n: "Papa frita x1", p: 2000 },
       { n: "Papa frita x2", p: 4000 },
